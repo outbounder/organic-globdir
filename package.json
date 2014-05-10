@@ -1,0 +1,25 @@
+{
+  "name": "organic-globdir",
+  "version": "0.0.1",
+  "description": "Organelle for emitting every file found within dir recursively.",
+  "main": "index.js",
+  "dependencies": {
+    "glob-stream": "~3.1.9",
+    "organic": "~0.1.1",
+    "underscore": "~1.6.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Boris Filipov",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/outbounder/organic-globdir.git"
+  },
+  "bugs": {
+    "url": "https://github.com/outbounder/organic-globdir/issues"
+  },
+  "homepage": "https://github.com/outbounder/organic-globdir"
+}
