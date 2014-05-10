@@ -4,15 +4,15 @@ Organelle for emitting every file found within dir recursively.
 
 ## dna
 
-  {
-    "root": "path/relative/to/cwd",
-    "pattern": "/**/*.ext",
-    "forEachEmit": {
-      "value": ""
-    },
-    "emitReady": "",
-    "reactOn": ""
-  }
+    {
+      "root": "path/relative/to/cwd",
+      "pattern": "/**/*.ext",
+      "forEachEmit": {
+        "value": ""
+      },
+      "emitReady": "",
+      "reactOn": ""
+    }
 
 * `forEachEmit` is Chemical body been send into Plasma with added properties:
   * `data` - `glob-stream`'s File structure
