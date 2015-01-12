@@ -11,12 +11,14 @@ Organelle for emitting every file found within dir recursively.
         "value": ""
       },
       "emitReady": "",
-      "reactOn": ""
+      "reactOn": "",
+      "eachLimit": 1
     }
 
 * `forEachEmit` is Chemical body been send into Plasma with added properties:
   * `data` - `glob-stream`'s File structure
   * `root` - `dna.root` value
+  * `emitReady` - `"organic-globdir/"+file.path` value to be used for notification once emited chemical's reaction has been completed.
 
 * `emitReady` is Chemical type value, when provided will be used to emit into Plasma chemical having
   * `err` - null or Error value
