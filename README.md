@@ -12,7 +12,8 @@ Organelle for emitting every file found within dir recursively.
       },
       "emitReady": "",
       "reactOn": "",
-      "eachLimit": 1
+      "eachLimit": 1,
+      "waitReadyForEach": false
     }
 
 * `forEachEmit` is Chemical body been send into Plasma with added properties:
@@ -24,6 +25,7 @@ Organelle for emitting every file found within dir recursively.
   * `err` - null or Error value
 
 * when `reactOn` is not provided the organelle is triggered with its dna upon building.
+* setting `waitReadyForEach` to true will use `eachLimit`'s value to emit `forEachEmit` chemicals in prallel batches and wait for their Ready feedback to continue with next batch
 
 ## reacts to `dna.reactOn` value
 

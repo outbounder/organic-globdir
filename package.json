@@ -1,6 +1,6 @@
 {
   "name": "organic-globdir",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Organelle for emitting every file found within dir recursively.",
   "main": "index.js",
   "dependencies": {

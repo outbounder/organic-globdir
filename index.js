@@ -32,10 +32,13 @@ module.exports = Organel.extend(function(plasma, dna){
       })
       .on("end", function(){
         async.eachLimit(buffer, options.eachLimit || 1, function(chemical, nextChemical){
-          self.plasma.once(chemical.emitReady, function(c){
-            nextChemical(c.err)
-          })
+          if(options.waitReadyForEach)
+            self.plasma.once(chemical.emitReady, function(c){
+              nextChemical(c.err)
+            })
           self.plasma.emit(chemical)
+          if(!options.waitReadyForEach)
+            nextChemical()
         }, function(err){
           if(options.emitReady)
             self.plasma.emit({type: options.emitReady, err: err})
